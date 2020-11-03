@@ -23,11 +23,7 @@ void insert(int B[],int a,int &length,vector<vector<int>> &array){
 void max_increase(int A[],int n) {
     int B[n];
     vector<vector<int>> array(n);
-    int min = A[0];
-    for (int i = 0; i < n; i++) {
-        if (A[i] < min)
-            min = A[i];
-    }
+    
     array[0].push_back(min);
     B[0] = min;
     int L = 1;
